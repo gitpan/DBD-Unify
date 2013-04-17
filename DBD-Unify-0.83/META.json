@@ -1,0 +1,80 @@
+{
+   "resources" : {
+      "repository" : {
+         "web" : "http://repo.or.cz/w/DBD-Unify.git",
+         "url" : "http://repo.or.cz/r/DBD-Unify.git",
+         "type" : "git"
+         },
+      "license" : [
+         "http://dev.perl.org/licenses/"
+         ]
+      },
+   "meta-spec" : {
+      "version" : "2",
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec"
+      },
+   "generated_by" : "Author",
+   "version" : "0.83",
+   "name" : "DBD-Unify",
+   "author" : [
+      "H.Merijn Brand <h.m.brand@xs4all.nl>"
+      ],
+   "dynamic_config" : 1,
+   "license" : [
+      "perl_5"
+      ],
+   "prereqs" : {
+      "test" : {
+         "requires" : {
+            "Test::Harness" : "0",
+            "Test::More" : "0.90"
+            },
+         "recommends" : {
+            "Test::More" : "0.98"
+            }
+         },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.008004",
+            "DynaLoader" : "0",
+            "Carp" : "0",
+            "DBI" : "1.42"
+            },
+         "recommends" : {
+            "perl" : "5.016003",
+            "DBI" : "1.625"
+            }
+         },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0",
+            "Config" : "0",
+            "DBI::DBD" : "0",
+            "Cwd" : "0"
+            }
+         },
+      "build" : {
+         "requires" : {
+            "File::Copy" : "0",
+            "File::Find" : "0",
+            "Config" : "0"
+            }
+         }
+      },
+   "provides" : {
+      "DBD::Unify::GetInfo" : {
+         "version" : "0.10",
+         "file" : "lib/DBD/Unify/GetInfo.pm"
+         },
+      "DBD::Unify" : {
+         "version" : "0.83",
+         "file" : "lib/DBD/Unify.pm"
+         },
+      "DBD::Unify::TypeInfo" : {
+         "version" : "0.10",
+         "file" : "lib/DBD/Unify/TypeInfo.pm"
+         }
+      },
+   "abstract" : "DBI driver for Unify database systems",
+   "release_status" : "stable"
+   }

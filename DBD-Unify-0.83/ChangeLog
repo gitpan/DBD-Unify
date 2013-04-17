@@ -1,7 +1,18 @@
---- Release 0.82 - 02 Apr 2012 <h.m.brand@xs4all.nl>
+*** Release 0.83 - 17 Apr 2013 <h.m.brand@xs4all.nl>
+
+    - Removed "defined but not used: n_dbh" compile warning (Todd Zervas)
+    - Code cleanup (Todd Zervas)
+    - Fixed "subscript out of range" warning on HP-UX (Todd Zervas)
+    - Tested against new DBI-1.625
+    - Document naming conflict for inflate (README)
+    - Up copyright to 2013
+
+*** Release 0.82 - 02 Apr 2012 <h.m.brand@xs4all.nl>
 
     - Up copyright to 2012
-    - Fix two core dumps (Todd Zervas)
+    - Fix core dump during statement cleanup when SQLBE aborts unexpectedly (Todd Zervas)
+    - Fix glib detected free() invalid pointer error during perl cleanup due
+      to use of internal putenv <http://search.cpan.org/dist/perl/INSTALL#Environment_access> (Todd Zervas)
     - Added DATETIME support for 9.1 and up (Todd Zervas)
 
 --- Release 0.81 - 10 Nov 2011 <h.m.brand@xs4all.nl> was never released
